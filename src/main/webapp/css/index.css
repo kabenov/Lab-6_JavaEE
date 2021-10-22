@@ -1,0 +1,114 @@
+button {
+    padding: 0;
+    border: none;
+    transition: 0.5s ease;
+    transition-property: color, background-color, border-color;
+    cursor: pointer;
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkviolet;
+    margin-bottom: 50px;
+}
+
+.nav_link{
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.button{
+    width: 16%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background-color: #2f80ed;
+    color: #e0e0e0;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.button:hover {
+    color: #ffffff;
+    background-color: #151f30;
+}
+
+.w100{
+    width: 100%;
+}
+
+.header_st_info{
+    display: flex;
+    justify-content: space-around;
+}
+
+h3{
+    width: 13%;
+}
+
+.student_info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.inputPlace{
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    font-size: 16px;
+    width: 320px;
+    height: 45px;
+    padding: 0 5px 0 10px;
+}
+
+.submitButton{
+    width: 100%;
+    display: flex;
+}
+
+.submitButtonInput{
+    width: 16%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background-color: #2f80ed;
+    color: #e0e0e0;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.submitButtonInput:hover {
+    color: #151f30;
+    background-color: #ffffff;
+}
+
+
+form{
+    display: flex;
+}

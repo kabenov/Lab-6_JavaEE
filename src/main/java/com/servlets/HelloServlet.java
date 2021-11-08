@@ -5,6 +5,7 @@ import com.service.StudentService;
 
 import java.io.*;
 import java.util.Optional;
+import javax.ejb.EJB;
 import javax.inject.Inject;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
@@ -13,7 +14,7 @@ import javax.servlet.annotation.*;
 public class HelloServlet extends HttpServlet {
     private String message;
 
-    @Inject
+    @EJB
     private StudentService studentService;
 
     public void init() {

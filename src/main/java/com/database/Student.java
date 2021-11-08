@@ -1,12 +1,17 @@
 package com.database;
 
 import com.service.StudentService;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 
+@Entity
 public class Student {
+    @Id
     private Integer id;
     private String firstName;
     private String lastName;
@@ -24,6 +29,7 @@ public class Student {
     public static StudentBuilder studentBuilder() {
         return new Student().new StudentBuilder();
     }
+
     public class StudentBuilder {
         private StudentBuilder() {
         }

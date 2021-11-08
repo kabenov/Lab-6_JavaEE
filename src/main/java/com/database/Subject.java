@@ -1,9 +1,13 @@
 package com.database;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Arrays;
 import java.util.List;
 
+@Entity
 public class Subject {
+    @Id
     private Integer id;
     private String name;
     private Integer year;

@@ -4,6 +4,7 @@ import com.database.Student;
 import com.repository.StudentRepository;
 import com.service.StudentService;
 
+import javax.ejb.EJB;
 import javax.inject.Inject;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -17,7 +18,7 @@ import java.util.Optional;
 @WebServlet(value = "/studMethod2")
 public class MtdStGetByLastNameServlet extends HttpServlet {
 
-    @Inject
+    @EJB
     private StudentService studentService;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

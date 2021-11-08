@@ -5,10 +5,12 @@ import com.database.Subject;
 import com.repository.StudentRepository;
 import com.repository.SubjectRepository;
 
+import javax.ejb.Stateful;
 import javax.inject.Inject;
 import java.util.List;
 import java.util.Optional;
 
+@Stateful
 public class StudentService {
 
     @Inject

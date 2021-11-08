@@ -3,6 +3,7 @@ package com.servlets;
 import com.database.Student;
 import com.service.StudentService;
 
+import javax.ejb.EJB;
 import javax.inject.Inject;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,7 +17,7 @@ import java.util.Optional;
 @WebServlet(value="/studMethod4")
 public class MtdStGetByGpaServlet extends HttpServlet {
 
-    @Inject
+    @EJB
     private StudentService studentService;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
